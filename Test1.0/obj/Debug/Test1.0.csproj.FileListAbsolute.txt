@@ -1,0 +1,10 @@
+C:\Users\evgen\source\repos\Test1.0\Test1.0\bin\Debug\Test1.0.exe.config
+C:\Users\evgen\source\repos\Test1.0\Test1.0\bin\Debug\Test1.0.exe
+C:\Users\evgen\source\repos\Test1.0\Test1.0\bin\Debug\Test1.0.pdb
+C:\Users\evgen\source\repos\Test1.0\Test1.0\obj\Debug\Test1.0.csproj.AssemblyReference.cache
+C:\Users\evgen\source\repos\Test1.0\Test1.0\obj\Debug\Test1._0.Form1.resources
+C:\Users\evgen\source\repos\Test1.0\Test1.0\obj\Debug\Test1._0.Properties.Resources.resources
+C:\Users\evgen\source\repos\Test1.0\Test1.0\obj\Debug\Test1.0.csproj.GenerateResource.cache
+C:\Users\evgen\source\repos\Test1.0\Test1.0\obj\Debug\Test1.0.csproj.CoreCompileInputs.cache
+C:\Users\evgen\source\repos\Test1.0\Test1.0\obj\Debug\Test1.0.exe
+C:\Users\evgen\source\repos\Test1.0\Test1.0\obj\Debug\Test1.0.pdb
