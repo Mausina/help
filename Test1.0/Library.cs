@@ -8,19 +8,22 @@ namespace Test1._0
 {
     public class Book
     {
+        public int Id { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
         public int YearPublished { get; set; }
         public string ISBN { get; set; }
 
-        public Book(string title, string author, int yearPublished, string isbn)
+        public Book(int id, string title, string author, int yearPublished, string isbn)
         {
+            Id = id;
             Title = title;
             Author = author;
             YearPublished = yearPublished;
             ISBN = isbn;
         }
     }
+
 
     public class Library
     {
@@ -36,9 +39,9 @@ namespace Test1._0
             books.Add(book);
         }
 
-        public bool RemoveBook(string isbn)
+        public bool RemoveBook(int id)
         {
-            var book = books.FirstOrDefault(b => b.ISBN == isbn);
+            var book = books.FirstOrDefault(b => b.Id == id);
             if (book != null)
             {
                 books.Remove(book);

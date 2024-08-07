@@ -22,7 +22,13 @@ namespace Test1._0
 
         private void btnAddBook_Click(object sender, EventArgs e)
         {
-            var book = new Book(txtTitle.Text, txtAuthor.Text, int.Parse(txtYear.Text), txtISBN.Text);
+            var book = new Book(
+                int.Parse(txtId.Text),
+                txtTitle.Text,
+                txtAuthor.Text,
+                int.Parse(txtYear.Text),
+                txtISBN.Text
+            );
             library.AddBook(book);
             MessageBox.Show("Book added successfully!");
             ClearTextBoxes();
@@ -30,7 +36,7 @@ namespace Test1._0
 
         private void btnRemoveBook_Click(object sender, EventArgs e)
         {
-            if (library.RemoveBook(txtISBN.Text))
+            if (library.RemoveBook(int.Parse(txtId.Text)))
             {
                 MessageBox.Show("Book removed successfully!");
             }
@@ -64,12 +70,13 @@ namespace Test1._0
             listBoxBooks.Items.Clear();
             foreach (var book in books)
             {
-                listBoxBooks.Items.Add($"{book.Title} by {book.Author} (Published: {book.YearPublished}, ISBN: {book.ISBN})");
+                listBoxBooks.Items.Add($"{book.Id}: {book.Title} by {book.Author} (Published: {book.YearPublished}, ISBN: {book.ISBN})");
             }
         }
 
         private void ClearTextBoxes()
         {
+            txtId.Clear();
             txtTitle.Clear();
             txtAuthor.Clear();
             txtYear.Clear();
